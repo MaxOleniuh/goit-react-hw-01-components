@@ -44,4 +44,10 @@ const FriendList = () => {
     </ul>
   );
 };
+FriendList.propTypes = {
+    isOnline: PropTypes.bool,
+    name: PropTypes.string,
+    avatar: PropTypes.string,
+    id: PropTypes.number,
+}
 export default FriendList;
