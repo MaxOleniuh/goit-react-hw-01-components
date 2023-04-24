@@ -29,7 +29,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     <p className="location">{location}</p>
   </div>
 
-  <ul className="stats">{userStats.map(({label, quantity}) => <li class="item-stats" key={label}>
+  <ul className="stats">{userStats.map(({label, quantity}) => <li className="item-stats" key={label}>
       <span className="label">{label}</span>
       <span className="quantity">{quantity}</span>
     </li>) }

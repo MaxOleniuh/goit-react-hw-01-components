@@ -14,8 +14,8 @@ const Statistics = (props) => {
           {title && (
                 <h2 className="title">Upload stats</h2>
         )}
-          <ul className="stat-list">{data.map(({ id, label, percentage }) => <li key={id}>
-          <span className="label">.{label}</span>
+          <ul className="stat-list">{data.map(({ id, label, percentage }) => <li key={id} className = "stat-item">
+          <span className="label">{label}</span>
               <span className="percentage">{percentage}%</span>
       </li>)}
       </ul>
