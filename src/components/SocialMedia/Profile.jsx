@@ -25,7 +25,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
       className="avatar"
     />
     <p className="name">{username}</p>
-    <p className="tag">{tag}</p>
+    <p className="tag">@{tag}</p>
     <p className="location">{location}</p>
   </div>
 
