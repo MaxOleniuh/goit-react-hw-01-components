@@ -6,6 +6,7 @@ import FriendList from './Friends/FriendsList';
 import friends from '../constants/friends.json';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import transactions from '../constants/transactions.json';
+import '../components/main.css'
 
 export const App = () => {
   return (
