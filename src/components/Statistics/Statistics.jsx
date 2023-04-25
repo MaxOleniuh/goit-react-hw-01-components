@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import s from './Statistics.module.css';
 
 const Statistics = (props) => {
     const title = props.title;
@@ -10,13 +11,13 @@ const Statistics = (props) => {
     { id: 'id-5', label: '.pdf', percentage: 10 },
   ];
   return (
-      <section className="statistics">
+      <section className={s.statistics}>
           {title && (
-                <h2 className="title">Upload stats</h2>
+                <h2 className={s.title}>Upload stats</h2>
         )}
-          <ul className="stat-list">{data.map(({ id, label, percentage }) => <li key={id} className = "stat-item">
-          <span className="label">{label}</span>
-              <span className="percentage">{percentage}%</span>
+          <ul className={s.statList}>{data.map(({ id, label, percentage }) => <li key={id} className = {s.statItem}>
+          <span className={s.label}>{label}</span>
+              <span className={s.percentage}>{percentage}%</span>
       </li>)}
       </ul>
     </section>

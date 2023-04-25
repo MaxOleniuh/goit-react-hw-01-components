@@ -1,0 +1,28 @@
+.transactionHistory {
+  width: 300px;
+  border: 1px solid rgb(182, 180, 180);
+}
+.transactionHistory:hover {
+  box-shadow: 3px 5px 24px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+thead {
+  background-color: rgb(39, 204, 219);
+  color: white;
+  padding: 10px;
+}
+thead > tr {
+  text-transform: uppercase;
+}
+thead > tr > th {
+  padding: 30px 100px;
+}
+tbody > tr > td {
+  padding: 10px 50px;
+  border: 1px solid rgb(215, 215, 215);
+  text-align: center;
+  color: grey;
+}
+tbody > tr:nth-child(even) {
+  background-color: rgb(235, 235, 235);
+}

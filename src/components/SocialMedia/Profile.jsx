@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import s from './Profile.module.css'
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   const userStats = [
@@ -17,21 +18,21 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
   ];
 
     return (
-        <div className="profile">
-  <div className="description">
+        <div className={s.profile}>
+  <div className={s.description}>
     <img
       src={avatar}
       alt="User avatar"
-      className="avatar"
+      className={s.avatar}
     />
-    <p className="name">{username}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
+    <p className={s.name}>{username}</p>
+    <p className={s.tag}>@{tag}</p>
+    <p className={s.location}>{location}</p>
   </div>
 
-  <ul className="stats">{userStats.map(({label, quantity}) => <li className="item-stats" key={label}>
-      <span className="label">{label}</span>
-      <span className="quantity">{quantity}</span>
+        <ul className={s.stats}>{userStats.map(({ label, quantity }) => <li className={s.itemStats} key={label}>
+      <span className={s.lavel}>{label}</span>
+      <span className={s.quantity}>{quantity}</span>
     </li>) }
   </ul>
 </div>
