@@ -18,7 +18,7 @@ const Statistics = ({data, title}) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  list: PropTypes.arrayOf(
+  data: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
