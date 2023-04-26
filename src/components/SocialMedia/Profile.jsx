@@ -2,18 +2,19 @@ import PropTypes from "prop-types";
 import s from './Profile.module.css'
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
+  const { followers, likes, views } = stats;
   const userStats = [
     {
       label: 'Followers',
-      quantity: stats.followers,
+      quantity: followers,
     },
     {
       label: 'Likes',
-      quantity: stats.likes,
+      quantity: likes,
     },
     {
       label: 'Views',
-      quantity: stats.views
+      quantity: views
     }
   ];
 
